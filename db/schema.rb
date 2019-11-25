@@ -28,8 +28,8 @@ ActiveRecord::Schema.define(version: 20191123154231) do
   end
 
   create_table "messages", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
-    t.text     "body",       limit: 65535, null: false
-    t.string   "image",                    null: false
+    t.text     "body",       limit: 65535
+    t.string   "image"
     t.integer  "user_id"
     t.integer  "group_id"
     t.datetime "created_at",               null: false
@@ -45,6 +45,7 @@ ActiveRecord::Schema.define(version: 20191123154231) do
     t.string   "email"
     t.string   "password"
     t.index ["email"], name: "index_users_on_email", unique: true, using: :btree
+    t.index ["name"], name: "index_users_on_name", using: :btree
     t.index ["password"], name: "index_users_on_password", unique: true, using: :btree
   end
 
