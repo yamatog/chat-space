@@ -31,10 +31,10 @@
       .lower-message
         .lower-message__content
           メッセージ
-    .form
-      %input.form__message{type: 'text', placeholder: 'type a message'}
-      .form__mask
-        %label.form__mask__image
-          = icon('fas','image',class: 'icon')
-          %input.hidden{type: 'file'}
-      %input.form__submit{type: 'submit', value: 'Send'}
+  .form
+    %input.form__message{type: 'text', placeholder: 'type a message'}
+    .form__mask
+      %label.form__mask__image
+        = icon('fas','image',class: 'icon')
+        %input.hidden{type: 'file'}
+    %input.form__submit{type: 'submit', value: 'Send'}
