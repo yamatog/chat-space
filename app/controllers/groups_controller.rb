@@ -19,9 +19,15 @@ class GroupsController < ApplicationController
   end
   
   def edit
+    
   end
 
   def update
+    if current_group.update(group_params)
+      redirect_to group_messages_path, notice: '更新されました'
+    else
+      render :edit
+    end
   end  
 
   private
