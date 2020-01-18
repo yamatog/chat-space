@@ -60,8 +60,8 @@ $('#new_message').on('submit', function(e){
   .fail(function() {
     alert("メッセージ送信に失敗しました");
   })
-$('.form__submit').click(function() {
-  $('input').prop('disabled', false);
-  })
+  // $('.form__submit').submit(function() {
+  //   $('.form_submit').prop('disabled', false);
+  // })
 })
 });
