@@ -16,5 +16,6 @@ module ChatSpace
       config.i18n.default_locale = :ja
     end
     config.time_zone = 'Tokyo'
+    config.action_view.automatically_disable_submit_tag = false
   end
 end
