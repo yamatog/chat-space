@@ -22,7 +22,7 @@ $(function(){
       return html;
     } else if (message.body) {
       var html = 
-       `<div class="message" data-message-id= message.id  >
+       `<div class="message" data-message-id= ${message.id}  >
           <div class="upper-message">
             <div class="upper-message__user-name">
               ${message.user_name} 
@@ -40,7 +40,7 @@ $(function(){
       return html;
     } else if (message.image) {
       var html = 
-       `<div class="message" data-message-id= message.id  >
+       `<div class="message" data-message-id= ${message.id}  >
           <div class="upper-message">
             <div class="upper-message__user-name">
               ${message.user_name} 
